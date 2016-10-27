@@ -1,27 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
-    <meta name="dcterms.created" content="Sun, 11 Sep 2016 17:35:57 GMT">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Vishwa Patel</title>
-    
-    <!--[if IE]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head></head>
-  <body>
-   <!--[if IE]>
-  		Hi This is Vishwa
-		<a href="http://www.google.com"><button>Visit Google</button></a>
-		<img src="name.png"/>
-		<div class="loading">
-			 <img src="gears.gif" />
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>index</title>
+		<meta name="description" content="">
+		<meta name="Vishwa" content="Vishwa Patel">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"> 
+
+		<link rel="stylesheet" href="main.css">
+		<script>
+			function my_func()
+			{
+				var person_name = prompt("Please Enter your name: ");
+				if(person_name != null)
+				{
+					document.getElementById("user_name").innerHTML = "Hello " + person_name + "!";
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="my_func()">
+		
+		<div id="nav">
+			<div id="nav_wrapper">
+				<ul>
+					<li><a href="#" style="color:black">Home</a></li>
+					<li><a href="#" style="color:black">
+						<div class="social">
+							<button class="socialbtn" style="color:black">Social</button>
+							<div class="social-content">
+								<a href="https://www.facebook.com/people/Vishwa-Patel/100005675929209" target="_blank" style="color:red">Facebook</a>
+								<a href="mailto:vishwa9n@gmail.com" style="color:red">Email me</a>
+							</div>
+						</div>	
+					 </a></li>
+					<li><a href="#" style="color:black">
+						<div class="dropdown">
+							<button class="dropbtn" style="color:black">Projects</button>
+							<div class="dropdown-content">
+								<a href="caveescape.html" style="color:red">
+									<button class="projectbtn" style="color:red">CaveEscape</button>
+									</a>
+								<a href="#"style="color:red">PetConnect</a>
+								<a href="#"style="color:red">GPA</a>
+							</div>
+						</div>	
+					</a></li>
+					<li><a href="#" style="color:black">Skills</a></li>
+					<li><a href="#" style="color:black">About me</a></li>
+					<li><a href="more.html" style="color:black">
+						<button class="morebtn" style="color:black">More</button>		
+					</a></li>
+					<li><a href="" style="color:black">Learn</a></li>
+					</ul>
+				
+			</div>
+			
 		</div>
-		<![endif]-->
-  </body>
+		
+		<h3 class="top_header" id="name">Vishwa Patel</h3>
+		<h3 class="text" id ="user_name">Hello! Welcome to my Website</h3>
+		<!--
+			<div>
+			<header>
+				<h1>index</h1
+			</header>
+			<nav>
+				<p>
+					<a href="/">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+
+			<div>
+
+			</div>
+
+			<footer>
+				<p>
+					&copy; Copyright  by Vishwa Patel
+				</p>
+			</footer>
+		</div> -->
+			
+		
+		
+	</body>
 </html>
