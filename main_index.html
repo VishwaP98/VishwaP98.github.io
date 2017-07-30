@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Vishwa Patel </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="img/icon.png" type="image/gif">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="jquery.localscroll.js" type="text/javascript"></script>
+<script src="jquery.scrollTo.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/typed.js"></script>
+  <script type="text/javascript">
+      var timerStart = Date.now();
+  </script>
+  <script type="text/javascript">
+      $(window).scroll(function(){
+        if($(document).scrollTop() > 100){
+          $('nav').addClass('shrink');
+          $('li.vishwa').addClass('resume');
+          document.getElementById("name").innerHTML = "Home";
+          document.getElementById("name").style.color = "Red";
+        }else{
+          $('li.vishwa').removeClass('resume');
+          document.getElementById("name").innerHTML = "Vishwa Patel";
+          document.getElementById("name").style.color = "black";
+          $('li.vishwa').addClass('real');
+          $('nav').removeClass('shrink');
+         document.getElementById("nav_id").height = "65px";
+        }
+      });
+  </script>
+  <script type="text/javascript">
+  $(function(){
+    $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
+
+ });
+  </script>
+  <script>
+    $(function(){
+      $(".go_to_top").click(function(event){
+        event.preventDefault();
+        $('body').animate({"scrollTop":"0px"},1000);
+      })
+    })
+  </script>
+  <script>
+  var captionLength = 0;
+var caption = '';
+
+$(document).ready(function() {
+  setInterval ('cursorAnimation()', 600);
+  captionEl = $('#typing_text');
+
+  testTypingEffect();
+});
+
+function testTypingEffect() {
+  caption = "Hi I am Vishwa Patel<br>Welcome to my Website"
+  type();
+}
+
+function type() {
+  if(captionLength == 21){
+    captionEl.html(caption.substr(0, captionLength+=2));
+  }
+  else{
+    captionEl.html(caption.substr(0, captionLength++));
+  }
+  if(captionLength < caption.length+1) {
+      if(captionLength == 24){
+        setTimeout('type()',1500);
+      }
+      else{
+        if(captionLength != 21){
+            setTimeout('type()', 125);
+        }
+        else{
+          type();
+        }
+      }
+  } else {
+      captionLength = 0;
+      caption = '';
+  }
+}
+
+
+function cursorAnimation() {
+  $('#cursor').animate({
+      opacity: 0
+  }, 'fast', 'swing').animate({
+      opacity: 1
+  }, 'fast', 'swing');
+}
+
+  </script>
+
+
+  <style>
+    head,body{
+      margin: 0;
+      padding: 0;
+      overflow: scroll;
+    }
+    #linkref{
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      padding-right:30px;
+      padding-left: 30px;
+      font-size: 16px;
+      text-align: center;
+    }
+    #linkref:hover{
+      background-color: grey;
+    }
+    h1{
+      font-family: "Josefin Slab";
+      font-style: bold;
+	    font-variant: normal;
+    	font-weight: 600;
+	    line-height: 175%;
+      font-size: 50px;
+    }
+    h2{
+      font-family: "Josefin Slab";
+	    font-style: bold;
+	    font-variant: normal;
+    	font-weight: 550;
+	    line-height: 150%;
+      font-size: 40px;
+    }
+    h3{
+      font-family: "Josefin Slab";
+	    font-style: normal;
+	    font-variant: normal;
+    	font-weight: 400;
+      font-size: 30px;
+	    line-height: 100%;
+
+    }
+    .container .img-responsive{
+        padding-bottom: 10px;
+    }
+    #petconnect{
+      width: 50%;
+      height: 50%;
+    }
+    .row .img-responsive{
+      margin: 0 auto;
+      padding-top: 20px;
+      width: 50%;
+    }
+    #uoft{
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    #projects{
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 20px;
+    }
+    #contact{
+      margin: 0 auto;
+      padding-top: 15px;
+    }
+
+  .nav .navbar-nav {
+    display: block;
+    float: none;
+    text-align: center;
+
+  }
+
+  .navbar-nav > li{
+    display: inline-block;
+    float: none;
+  }
+
+
+  #main{
+    font-size: 20px;
+    color: white;
+    font-weight:900;
+  }
+
+  #main:hover{
+    background-color: grey;
+  }
+  #name{
+    color:black;
+  }
+  li.vishwa.real{
+    background-color: #ED1C24;
+    color: black;
+    font-size: 25px;
+    font-weight:900;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+  }
+  li.vishwa.real:hover{
+    background-color: grey;
+  }
+  nav.navbar.shrink{
+    max-height: 35px;
+  }
+
+  li.vishwa.resume{
+    border-radius: 0px;
+    font-size: 20px;
+    color: #9d9d9d;
+    background-color: transparent;
+  }
+  li.vishwa.resume:hover{
+    background-color: grey;
+  }
+  #linkedin, #fb, #git{
+    background-color: lightgrey;
+    border: none;
+  }
+  #linkedin:hover,#git:hover,#fb:hover{
+    background-color: darkgrey;
+  }
+  #profile_pic{
+    width: 100%;
+    height: 100%;
+  }
+  #cursor{
+    color:#333;
+  }
+  #name_type{
+      font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+      font-size: 40px;
+      font-weight: bold;
+  }
+  #last_edu{
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #coop{
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .main_page{
+    background-color: white;
+  }
+  .button5{
+    background-color: white;
+    color: black;
+    font-size: 28px;
+    font-family:sans-serif;
+    border: 3px solid #555555
+  }
+  .button5:hover{
+    color: white;
+    background-color: #555555
+  }
+  .button4{
+    background-color: white;
+    color: black;
+    font-size: 28px;
+    font-family: sans-serif;
+    border: 3px solid red
+  }
+  .button4:hover{
+    color: white;
+    background-color: red;
+  }
+  .button{
+    padding: 14px 30px;
+     margin: 5px 5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 768px) {
+      #profile_pic{
+        width: 75%;
+      }
+      [class*="col-"] {
+        width: 100%;
+      }
+
+  }
+  </style>
+
+</head>
+<body onload="load()">
+
+  <section class="main_page">
+
+
+  <!-- Here is the navigation bar -->
+  <nav id="nav_id" class="navbar navbar-inverse navbar-fixed-top" style="height:65px;display:flex;align-items:center;">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li id="main"><a href="Vishwa_Resume.pdf">Resume</a></li>
+        <li><a href="#">  </a></li>
+        <li id="main"><a href="#uoft">Education</a></li>
+        <li><a href="#">  </a></li>
+        <li class="vishwa real"><a href="#top" class="go_to_top" id="name">Vishwa  Patel</a>
+        <li><a href="#">  </a></li>
+        <li id="main"><a href="#last_edu">Projects</a></li>
+        <li><a href="#">  </a></li>
+        <li id="main"><a href="#contact">Contact Me</a></li>
+      <ul>
+    </div>
+  </nav>
+  <div class="container-fluid" style="margin-top:100px;">
+
+        <div class="container">
+              <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                  <img src="img/profile_pic.jpg" id="profile_pic"class="img-responsive" alt="Profile Picture" style="height:360px;border-radius:35px;">
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-6">
+                    <div style="display:table-cell;vertical-align:middle;height:360px;width:100%;">
+                      <p id="name_type">
+                        <span id="typing_text" style="vertical-align:middle;"></span>
+                        <span id="cursor">|</span>
+                      </p>
+                    </div>
+              </div>
+        </div>
+      <div class="row text-center">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <h3 style="text-align:center;">I am a second year computer science student at University of Toronto. My interests include competitive programming, AI, business and Android.
+            </h3>
+          </div>
+            <div class="w3-container">
+              <span class="w3-tag w3-light-blue" id="coop">Looking for Internship in Winter 2018 in Software Industry</span>
+            </div>
+          <div id="check" class="col-sm-1"></div>
+      </div>
+      <div class="row text-center" id="uoft">
+        <div class="col-sm-4">
+          <img src="img/uoft.png" class="img-responsive" alt="UofT">
+        </div>
+        <div class="col-sm-8">
+          <div style="display: table-cell;vertical-align: middle; height:299px; width:100%;">
+            <h1>2016 - 2020</h1>
+            <h2>University of Toronto</h2>
+            <h3>Candidate for Bachelor of Science Computer Science (Software Engineering Stream)</h3>
+            <h3 style="font-size:24px;font-weight:bold;">Recognized as University of Toronto Scholar</h3>
+            <h3 style="font-size:24px;font-weight:bold;">Awarded Computer Science Excellence Award (UofT)</h3>
+          </div>
+        </div>
+      </div>
+      <h2 id="last_edu">Expected Graduation in April 2020</h2>
+
+
+
+  </div>
+</section>
+<!-- Edit here for projects -->
+<section style="background-color:white;">
+<div id="projects">
+  <div class="row text-center">
+    <h1>Projects</h1>
+  </div>
+    <div class="row">
+        <div style="margin-left:25px;">
+          <!-- <img src="img/petconnect.png" class="img-responsive" alt="PetConnect"> -->
+          <h2 style="font-weight:600;color:#222;">PetConnect - Android Application</h2>
+          <div class="row text-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+              <h3 style="font-size:24px;text-indent:20px;margin-bottom:20px;">
+                PetConnect is an Android application designed by a team of 3 to improve delivery of Animal Services
+                of City of Toronto. It includes a map of different parks and recreational locations in Toronto. Having the official website of Animal
+                Services in the app, you are always notified of the City's initiatives. Alongside, the app also has a reminder feature
+                that extracts data from the City's database, generates a list of all the events for the month
+                and gives a reminder whenever an event is nearby.
+              </h3>
+            </div>
+            <div class="col-sm-4">
+              <!-- Here goes the image -->
+              <img id="petconnect" src="img/petconnect.png" class="img-responsive" style="height:216px" alt="PetConnect">
+            </div>
+            <div class="col-sm-1"></div>
+
+        </div>
+        <div class="row text-center">
+          <button class="button button4"><a href="https://github.com/VishwaP98/PetConnectFinal"></a>View it on GitHub</button>
+        </div>
+
+          <h2 style="font-weight:600;color:#222;">Cave Escape - First Android App</h2>
+          <div class="row text-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+              <h3 style="font-size:24px;text-indent:20px;margin-bottom:20px;">
+                Cave Escape is an Android gaming application developed by a team of 2 in which level of difficult increases as
+                game progresses. The app builds a high score table onto the device saving the player's high score. Moreover, the application
+                has gems that you can collect to give yourself an extra life. The game also tracks the number of gems just like the high score.
+                This game has been downloaded by more than 100 users on the Play Store and receiving great responses on my first Android app
+              </h3>
+            </div>
+            <div class="col-sm-4">
+              <!-- Here goes the image -->
+              <img id="cavescape" src="img/cavescape.webp" class="img-responsive" style="height:216px" alt="Cave Escape">
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row text-center">
+          <button class="button button5"><a href="https://play.google.com/store/apps/details?id=com.hvdevelopers.vishwa.realestatelegacy&hl=en"></a>View it on PlayStore</button>
+        </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Edit here for Contact -->
+<section style="background-color:lightgrey;">
+<div class="row text-center" id="contact">
+  <h1>Contact Me</h1>
+  <p id="icons">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-1">
+      <button type="button" id="git" onclick="window.location.href='https://github.com/VishwaP98'">
+        <p style="font-weight:bold;"><i class="fa fa-github" style="font-size:20px;padding:5px;display:block;"></i>GitHub</p>
+      </button>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" id="fb" Onclick="window.location.href='mailto:vishwa9n@gmail.com'">
+        <p style="font-weight:bold;"><i class="fa fa-envelope" style="font-size:20px;padding:5px;display:block;"></i>Email</p>
+      </button>
+    </div>
+    <div class="col-sm-1">
+      <button type="button" id="linkedin" Onclick="window.location.href='https://www.linkedin.com/in/vishwapatel98'">
+        <p style="font-weight:bold;">
+          <i class="fa fa-linkedin" style="font-size:20px;padding:5px;display:block;"></i>
+          LinkedIn
+        </p>
+
+      </button>
+    </div>
+    <div class="col-sm-4"></div>
+
+</div>
+<div class="row text-center">
+  <p>
+    <p style="display:inline-block">Copyright @ Vishwa Patel</p>
+    <p style="display:inline-block">
+      <i class="fa fa-circle" style="font-size:10px;padding-right:5px;padding-left:5px;"></i>
+    </p>
+    <p id="load_time" style="display:inline-block"></p>
+    <script type="text/javascript">
+        function load(){
+          $(window).on('beforeunload', function() {
+            preventDefault();
+            $(window).scrollTop(0);
+          });
+            document.getElementById("load_time").innerHTML = "Page loaded in " + (Date.now() - timerStart)/1000 + " seconds";
+        }
+    </script>
+</p>
+</div>
+</section>
+
+<body>
+
+</body>
+</html>
